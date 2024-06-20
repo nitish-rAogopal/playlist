@@ -45,6 +45,7 @@ typedef struct node playLL;
     ```sh
     void readSong(SONG s)
     ```
+    
 Prints the details of a song.
 
 ### inserAtLast
@@ -52,76 +53,87 @@ Prints the details of a song.
     ```sh
     playLL *inserAtLast(SONG sng)
     ```
+    
 Inserts a new song at the end of the playlist.
 
 ### readPlayLL
 
-    ```sh
-    void readPlayLL()
-    ```
+ ```
+ void readPlayLL()
+ ```
+    
 Displays all songs in the playlist.
 
 ### matching
 
-    ```sh
-    int matching(SONG sf, SONG st)
-    ```
+```
+int matching(SONG sf, SONG st)
+```
+    
 Checks if two songs are the same based on their names.
 
 ### deleteSong
 
-    ```sh
-    playLL *deleteSong(SONG s, int isLoop)
-    ```
+```
+playLL *deleteSong(SONG s, int isLoop)
+```
+
 Deletes a specific song from the playlist.
 
 ### playParticular
 
-    ```sh
-    void playParticular(SONG s)
-    ```
+```
+void playParticular(SONG s)
+```
+
 Plays a specific song from the playlist.
 
 ### playFirst
 
-    ```sh
-    void playFirst()
-    ```
+```
+void playFirst()
+```
+
 Plays the first song in the playlist.
 
 ### shuffleSong
 
-    ```sh
-    playLL *shuffleSong(SONG s1, SONG s2)
-    ```
+```
+playLL *shuffleSong(SONG s1, SONG s2)
+```
+
 Shuffles two songs in the playlist.
 
 ### playNext
 
-    ```sh
-    void playNext(int isLoop)
-    ```
+```
+void playNext(int isLoop)
+```
+
 Plays the next song in the playlist.
 
 ### playPrevious
 
-    ```sh
-    void playPrevious(int isLoop)
-    ```
+```
+void playPrevious(int isLoop)
+```
+
 Plays the previous song in the playlist.
 
 ### playListPrompt
 
-    ```sh
-    int playListPrompt(int isloop)
-    ```
+```
+int playListPrompt(int isloop)
+```
+
 Prompts the user to interact with the playlist.
 
 ### main
 
-    ```sh
-    int main()
-    ```
+```    
+int main()
+```
+
 Main function that runs the program and handles the user's choices.
 
 ## How to Compile and Run
