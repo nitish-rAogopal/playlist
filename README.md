@@ -42,96 +42,86 @@ typedef struct node playLL;
 
 ### readSong
 
-```
-void readSong(SONG s)
-```
-
+    ```sh
+    void readSong(SONG s)
+    ```
 Prints the details of a song.
 
 ### inserAtLast
 
-```
-playLL *inserAtLast(SONG sng)
-```
-
+    ```sh
+    playLL *inserAtLast(SONG sng)
+    ```
 Inserts a new song at the end of the playlist.
 
 ### readPlayLL
 
-```
-void readPlayLL()
-```
-
+    ```sh
+    void readPlayLL()
+    ```
 Displays all songs in the playlist.
 
 ### matching
 
-```
-int matching(SONG sf, SONG st)
-```
-
+    ```sh
+    int matching(SONG sf, SONG st)
+    ```
 Checks if two songs are the same based on their names.
 
 ### deleteSong
 
-```
-playLL *deleteSong(SONG s, int isLoop)
-```
-
+    ```sh
+    playLL *deleteSong(SONG s, int isLoop)
+    ```
 Deletes a specific song from the playlist.
 
 ### playParticular
 
-```
-void playParticular(SONG s)
-```
-
+    ```sh
+    void playParticular(SONG s)
+    ```
 Plays a specific song from the playlist.
 
 ### playFirst
 
-```
-void playFirst()
-```
-
+    ```sh
+    void playFirst()
+    ```
 Plays the first song in the playlist.
 
 ### shuffleSong
-c
-Copy code
-playLL *shuffleSong(SONG s1, SONG s2)
+
+    ```sh
+    playLL *shuffleSong(SONG s1, SONG s2)
+    ```
 Shuffles two songs in the playlist.
 
 ### playNext
 
-```
-void playNext(int isLoop)
-```
-
+    ```sh
+    void playNext(int isLoop)
+    ```
 Plays the next song in the playlist.
 
 ### playPrevious
 
-```
-void playPrevious(int isLoop)
-```
-
+    ```sh
+    void playPrevious(int isLoop)
+    ```
 Plays the previous song in the playlist.
 
 ### playListPrompt
 
-```
-int playListPrompt(int isloop)
-```
-
+    ```sh
+    int playListPrompt(int isloop)
+    ```
 Prompts the user to interact with the playlist.
 
 ### main
 
-```
-int main()
-```
-
+    ```sh
+    int main()
+    ```
 Main function that runs the program and handles the user's choices.
 
 ## How to Compile and Run
@@ -151,15 +141,15 @@ gcc playlist.c -o playlist.exe
 
 1. Choose between looped or non-looped playlist mode.
 2. Use the menu to interact with the playlist:
-  - Insert a new song
-  - Delete a song
-  - Display all songs
-  - Play the next song
-  - Play the previous song
-  - Play a specific song
-  - Shuffle two songs
-  - Play the first song
-  - Exit the program
+      - Insert a new song
+      - Delete a song
+      - Display all songs
+      - Play the next song
+      - Play the previous song
+      - Play a specific song
+      - Shuffle two songs
+      - Play the first song
+      - Exit the program
 
 ## Future Improvements
 
@@ -188,7 +178,7 @@ While the current implementation of the Playlist Manager is functional, there ar
 - **Optimization:** Optimize the current code to improve performance, especially for large playlists.
 - **Memory Management:** Improve memory management to handle dynamic memory allocation more efficiently and prevent memory leaks.
 
-## Code Quality
+### Code Quality
 
 - **Refactoring:** Refactor the code to improve readability, maintainability, and modularity. Break down large functions into smaller, more manageable ones.
 - **Testing:** Implement unit tests to ensure the correctness of the code and facilitate future changes and improvements.
