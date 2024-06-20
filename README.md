@@ -42,17 +42,17 @@ typedef struct node playLL;
 
 ### readSong
 
-    ```sh
-    void readSong(SONG s)
-    ```
+```
+void readSong(SONG s)
+```
     
 Prints the details of a song.
 
 ### inserAtLast
 
-    ```sh
-    playLL *inserAtLast(SONG sng)
-    ```
+```
+playLL *inserAtLast(SONG sng)
+```
     
 Inserts a new song at the end of the playlist.
 
